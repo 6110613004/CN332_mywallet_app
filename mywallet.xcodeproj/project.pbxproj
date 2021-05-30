@@ -1,0 +1,492 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		090FF463265B68EF00190D17 /* paymentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090FF462265B68EF00190D17 /* paymentView.swift */; };
+		090FF465265BBCEC00190D17 /* income-expenseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090FF464265BBCEC00190D17 /* income-expenseView.swift */; };
+		090FF467265BBD7700190D17 /* AccruedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090FF466265BBD7700190D17 /* AccruedView.swift */; };
+		090FF469265BBE4100190D17 /* DebtView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090FF468265BBE4100190D17 /* DebtView.swift */; };
+		09336F6D264FAEFB002A840F /* EditaccView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09336F6C264FAEFB002A840F /* EditaccView.swift */; };
+		09336F6F264FEEF7002A840F /* EditcashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09336F6E264FEEF7002A840F /* EditcashView.swift */; };
+		09336F712650110E002A840F /* setcashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09336F702650110E002A840F /* setcashView.swift */; };
+		09336F7326551602002A840F /* addcashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09336F7226551602002A840F /* addcashView.swift */; };
+		09336F7526561DC9002A840F /* subcashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09336F7426561DC9002A840F /* subcashView.swift */; };
+		09336F85265651D6002A840F /* EditbankView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09336F84265651D6002A840F /* EditbankView.swift */; };
+		09336F8726578B29002A840F /* NewTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09336F8626578B29002A840F /* NewTabView.swift */; };
+		0964AF1F265A8E170089CA7B /* activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0964AF1E265A8E170089CA7B /* activity.swift */; };
+		0964AF21265A9B3A0089CA7B /* AddActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0964AF20265A9B3A0089CA7B /* AddActivityView.swift */; };
+		09A02AD4264EA928008244BE /* listView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A02AD3264EA928008244BE /* listView.swift */; };
+		09A02AD9264EA998008244BE /* summaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A02AD8264EA998008244BE /* summaryView.swift */; };
+		09A02ADD264EA9BD008244BE /* detailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A02ADC264EA9BD008244BE /* detailView.swift */; };
+		FE00D0A02642D2D700C05774 /* InstanceData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE00D09F2642D2D700C05774 /* InstanceData.swift */; };
+		FE00D0A42642EF0900C05774 /* Debt.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE00D0A32642EF0900C05774 /* Debt.swift */; };
+		FE00D0A72642F02100C05774 /* Accrued_income.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE00D0A62642F02100C05774 /* Accrued_income.swift */; };
+		FE00D0B8264BE71A00C05774 /* TabbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE00D0B7264BE71A00C05774 /* TabbarView.swift */; };
+		FE00D0BB264D13EA00C05774 /* overallview.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE00D0BA264D13EA00C05774 /* overallview.swift */; };
+		FE00D0BF264D263400C05774 /* FirstView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE00D0BE264D263400C05774 /* FirstView.swift */; };
+		FE48A8FF263E612D00B0D932 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE48A8FE263E612D00B0D932 /* AppDelegate.swift */; };
+		FE48A901263E612D00B0D932 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE48A900263E612D00B0D932 /* SceneDelegate.swift */; };
+		FE48A903263E612D00B0D932 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE48A902263E612D00B0D932 /* ContentView.swift */; };
+		FE48A905263E613200B0D932 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE48A904263E613200B0D932 /* Assets.xcassets */; };
+		FE48A908263E613200B0D932 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE48A907263E613200B0D932 /* Preview Assets.xcassets */; };
+		FE48A90B263E613200B0D932 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE48A909263E613200B0D932 /* LaunchScreen.storyboard */; };
+		FE48A918263EBE8000B0D932 /* Userwallet.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE48A917263EBE8000B0D932 /* Userwallet.swift */; };
+		FE48A91B264030B000B0D932 /* Cash.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE48A91A264030B000B0D932 /* Cash.swift */; };
+		FE48A92126410D1600B0D932 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE48A92026410D1600B0D932 /* Account.swift */; };
+		FE48A924264117EB00B0D932 /* Aactivaty.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE48A923264117EB00B0D932 /* Aactivaty.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		090FF462265B68EF00190D17 /* paymentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = paymentView.swift; sourceTree = "<group>"; };
+		090FF464265BBCEC00190D17 /* income-expenseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "income-expenseView.swift"; sourceTree = "<group>"; };
+		090FF466265BBD7700190D17 /* AccruedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccruedView.swift; sourceTree = "<group>"; };
+		090FF468265BBE4100190D17 /* DebtView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebtView.swift; sourceTree = "<group>"; };
+		09336F6C264FAEFB002A840F /* EditaccView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditaccView.swift; sourceTree = "<group>"; };
+		09336F6E264FEEF7002A840F /* EditcashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditcashView.swift; sourceTree = "<group>"; };
+		09336F702650110E002A840F /* setcashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = setcashView.swift; sourceTree = "<group>"; };
+		09336F7226551602002A840F /* addcashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addcashView.swift; sourceTree = "<group>"; };
+		09336F7426561DC9002A840F /* subcashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = subcashView.swift; sourceTree = "<group>"; };
+		09336F84265651D6002A840F /* EditbankView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditbankView.swift; sourceTree = "<group>"; };
+		09336F8626578B29002A840F /* NewTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTabView.swift; sourceTree = "<group>"; };
+		0964AF1E265A8E170089CA7B /* activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = activity.swift; sourceTree = "<group>"; };
+		0964AF20265A9B3A0089CA7B /* AddActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddActivityView.swift; sourceTree = "<group>"; };
+		09A02AD3264EA928008244BE /* listView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = listView.swift; sourceTree = "<group>"; };
+		09A02AD8264EA998008244BE /* summaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = summaryView.swift; sourceTree = "<group>"; };
+		09A02ADC264EA9BD008244BE /* detailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = detailView.swift; sourceTree = "<group>"; };
+		FE00D09F2642D2D700C05774 /* InstanceData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstanceData.swift; sourceTree = "<group>"; };
+		FE00D0A32642EF0900C05774 /* Debt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Debt.swift; sourceTree = "<group>"; };
+		FE00D0A62642F02100C05774 /* Accrued_income.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Accrued_income.swift; sourceTree = "<group>"; };
+		FE00D0B7264BE71A00C05774 /* TabbarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarView.swift; sourceTree = "<group>"; };
+		FE00D0BA264D13EA00C05774 /* overallview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = overallview.swift; sourceTree = "<group>"; };
+		FE00D0BE264D263400C05774 /* FirstView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstView.swift; sourceTree = "<group>"; };
+		FE48A8FB263E612D00B0D932 /* mywallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mywallet.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE48A8FE263E612D00B0D932 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FE48A900263E612D00B0D932 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		FE48A902263E612D00B0D932 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FE48A904263E613200B0D932 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FE48A907263E613200B0D932 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FE48A90A263E613200B0D932 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FE48A90C263E613200B0D932 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FE48A917263EBE8000B0D932 /* Userwallet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Userwallet.swift; sourceTree = "<group>"; };
+		FE48A91A264030B000B0D932 /* Cash.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cash.swift; sourceTree = "<group>"; };
+		FE48A92026410D1600B0D932 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
+		FE48A923264117EB00B0D932 /* Aactivaty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Aactivaty.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FE48A8F8263E612D00B0D932 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		09336F6B264FAE84002A840F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FE48A917263EBE8000B0D932 /* Userwallet.swift */,
+				FE48A923264117EB00B0D932 /* Aactivaty.swift */,
+				FE48A91A264030B000B0D932 /* Cash.swift */,
+				FE48A92026410D1600B0D932 /* Account.swift */,
+				FE00D0A32642EF0900C05774 /* Debt.swift */,
+				FE00D0A62642F02100C05774 /* Accrued_income.swift */,
+				FE00D09F2642D2D700C05774 /* InstanceData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		09336F77265624F8002A840F /* EditoverallView */ = {
+			isa = PBXGroup;
+			children = (
+				09336F6C264FAEFB002A840F /* EditaccView.swift */,
+				09336F79265636DB002A840F /* EditCash */,
+				09336F7A26563714002A840F /* EditBank */,
+			);
+			path = EditoverallView;
+			sourceTree = "<group>";
+		};
+		09336F7826562553002A840F /* MainView */ = {
+			isa = PBXGroup;
+			children = (
+				FE00D0BE264D263400C05774 /* FirstView.swift */,
+				FE48A902263E612D00B0D932 /* ContentView.swift */,
+				09336F8626578B29002A840F /* NewTabView.swift */,
+				FE00D0B7264BE71A00C05774 /* TabbarView.swift */,
+				FE00D0BA264D13EA00C05774 /* overallview.swift */,
+				09336F77265624F8002A840F /* EditoverallView */,
+				09A02AD3264EA928008244BE /* listView.swift */,
+				0964AF1E265A8E170089CA7B /* activity.swift */,
+				090FF464265BBCEC00190D17 /* income-expenseView.swift */,
+				090FF466265BBD7700190D17 /* AccruedView.swift */,
+				090FF468265BBE4100190D17 /* DebtView.swift */,
+				0964AF20265A9B3A0089CA7B /* AddActivityView.swift */,
+				090FF462265B68EF00190D17 /* paymentView.swift */,
+				09A02AD8264EA998008244BE /* summaryView.swift */,
+				09A02ADC264EA9BD008244BE /* detailView.swift */,
+			);
+			path = MainView;
+			sourceTree = "<group>";
+		};
+		09336F79265636DB002A840F /* EditCash */ = {
+			isa = PBXGroup;
+			children = (
+				09336F6E264FEEF7002A840F /* EditcashView.swift */,
+				09336F702650110E002A840F /* setcashView.swift */,
+				09336F7226551602002A840F /* addcashView.swift */,
+				09336F7426561DC9002A840F /* subcashView.swift */,
+			);
+			path = EditCash;
+			sourceTree = "<group>";
+		};
+		09336F7A26563714002A840F /* EditBank */ = {
+			isa = PBXGroup;
+			children = (
+				09336F84265651D6002A840F /* EditbankView.swift */,
+			);
+			path = EditBank;
+			sourceTree = "<group>";
+		};
+		FE48A8F2263E612D00B0D932 = {
+			isa = PBXGroup;
+			children = (
+				FE48A8FD263E612D00B0D932 /* mywallet */,
+				FE48A8FC263E612D00B0D932 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FE48A8FC263E612D00B0D932 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FE48A8FB263E612D00B0D932 /* mywallet.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FE48A8FD263E612D00B0D932 /* mywallet */ = {
+			isa = PBXGroup;
+			children = (
+				FE48A8FE263E612D00B0D932 /* AppDelegate.swift */,
+				FE48A900263E612D00B0D932 /* SceneDelegate.swift */,
+				09336F7826562553002A840F /* MainView */,
+				09336F6B264FAE84002A840F /* Model */,
+				FE48A904263E613200B0D932 /* Assets.xcassets */,
+				FE48A909263E613200B0D932 /* LaunchScreen.storyboard */,
+				FE48A90C263E613200B0D932 /* Info.plist */,
+				FE48A906263E613200B0D932 /* Preview Content */,
+			);
+			path = mywallet;
+			sourceTree = "<group>";
+		};
+		FE48A906263E613200B0D932 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				FE48A907263E613200B0D932 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FE48A8FA263E612D00B0D932 /* mywallet */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FE48A90F263E613200B0D932 /* Build configuration list for PBXNativeTarget "mywallet" */;
+			buildPhases = (
+				FE48A8F7263E612D00B0D932 /* Sources */,
+				FE48A8F8263E612D00B0D932 /* Frameworks */,
+				FE48A8F9263E612D00B0D932 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = mywallet;
+			productName = mywallet;
+			productReference = FE48A8FB263E612D00B0D932 /* mywallet.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FE48A8F3263E612D00B0D932 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					FE48A8FA263E612D00B0D932 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = FE48A8F6263E612D00B0D932 /* Build configuration list for PBXProject "mywallet" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FE48A8F2263E612D00B0D932;
+			productRefGroup = FE48A8FC263E612D00B0D932 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FE48A8FA263E612D00B0D932 /* mywallet */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FE48A8F9263E612D00B0D932 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE48A90B263E613200B0D932 /* LaunchScreen.storyboard in Resources */,
+				FE48A908263E613200B0D932 /* Preview Assets.xcassets in Resources */,
+				FE48A905263E613200B0D932 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FE48A8F7263E612D00B0D932 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				090FF463265B68EF00190D17 /* paymentView.swift in Sources */,
+				FE48A924264117EB00B0D932 /* Aactivaty.swift in Sources */,
+				090FF467265BBD7700190D17 /* AccruedView.swift in Sources */,
+				09A02AD9264EA998008244BE /* summaryView.swift in Sources */,
+				FE48A8FF263E612D00B0D932 /* AppDelegate.swift in Sources */,
+				FE00D0A42642EF0900C05774 /* Debt.swift in Sources */,
+				FE00D0A02642D2D700C05774 /* InstanceData.swift in Sources */,
+				FE00D0A72642F02100C05774 /* Accrued_income.swift in Sources */,
+				090FF465265BBCEC00190D17 /* income-expenseView.swift in Sources */,
+				FE00D0B8264BE71A00C05774 /* TabbarView.swift in Sources */,
+				09336F7326551602002A840F /* addcashView.swift in Sources */,
+				09336F6F264FEEF7002A840F /* EditcashView.swift in Sources */,
+				0964AF21265A9B3A0089CA7B /* AddActivityView.swift in Sources */,
+				09336F7526561DC9002A840F /* subcashView.swift in Sources */,
+				09336F6D264FAEFB002A840F /* EditaccView.swift in Sources */,
+				09A02AD4264EA928008244BE /* listView.swift in Sources */,
+				FE48A901263E612D00B0D932 /* SceneDelegate.swift in Sources */,
+				090FF469265BBE4100190D17 /* DebtView.swift in Sources */,
+				FE00D0BF264D263400C05774 /* FirstView.swift in Sources */,
+				0964AF1F265A8E170089CA7B /* activity.swift in Sources */,
+				09A02ADD264EA9BD008244BE /* detailView.swift in Sources */,
+				FE48A91B264030B000B0D932 /* Cash.swift in Sources */,
+				09336F8726578B29002A840F /* NewTabView.swift in Sources */,
+				09336F85265651D6002A840F /* EditbankView.swift in Sources */,
+				FE00D0BB264D13EA00C05774 /* overallview.swift in Sources */,
+				FE48A903263E612D00B0D932 /* ContentView.swift in Sources */,
+				09336F712650110E002A840F /* setcashView.swift in Sources */,
+				FE48A918263EBE8000B0D932 /* Userwallet.swift in Sources */,
+				FE48A92126410D1600B0D932 /* Account.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FE48A909263E613200B0D932 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FE48A90A263E613200B0D932 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FE48A90D263E613200B0D932 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FE48A90E263E613200B0D932 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FE48A910263E613200B0D932 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"mywallet/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = mywallet/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "th.ac.tu.student-kittisak.mywallet";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FE48A911263E613200B0D932 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"mywallet/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = mywallet/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "th.ac.tu.student-kittisak.mywallet";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FE48A8F6263E612D00B0D932 /* Build configuration list for PBXProject "mywallet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE48A90D263E613200B0D932 /* Debug */,
+				FE48A90E263E613200B0D932 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FE48A90F263E613200B0D932 /* Build configuration list for PBXNativeTarget "mywallet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE48A910263E613200B0D932 /* Debug */,
+				FE48A911263E613200B0D932 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FE48A8F3263E612D00B0D932 /* Project object */;
+}
