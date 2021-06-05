@@ -440,6 +440,7 @@ struct detailView: View {
                             })
                             .disabled(list.cou_sta >= 1 && !(status || (money || bank)))
                             Button(action:{
+                                var index = 0
                                 for i in 0..<Userwallet.lists.count{
                                     if list.id == Userwallet.lists[i].id{
                                         if Userwallet.lists[i].catagory != "รายรับค้างรับ" && Userwallet.lists[i].catagory != "หนี้สิน"{
@@ -460,10 +461,11 @@ struct detailView: View {
                                                 }
                                             }
                                         }
-                                        Userwallet.lists.remove(at: i)
+                                        index = i
                                         show_detail.toggle()
                                     }
                                 }
+                                Userwallet.lists.remove(at: index)
                             }){
                                 Text("ลบ")
                                     .font(.title)

@@ -127,15 +127,35 @@ struct AddActivityView: View {
                                 ,
                                 content:{
                                     if type == "รายรับ"{
-                                        ForEach(data.green, id:\.self){ g in
-                                            Text(g)
-                                                .tag(g)
+                                        if money || bank{
+                                            ForEach(data.green.reversed(), id:\.self){ g in
+                                                if g != "รายรับค้างรับ"{
+                                                    Text(g)
+                                                        .tag(g)
+                                                }
+                                            }
+                                        }
+                                        else{
+                                            ForEach(data.green.reversed(), id:\.self){ g in
+                                                Text(g)
+                                                    .tag(g)
+                                            }
                                         }
                                     }
                                     else{
-                                        ForEach(data.red, id:\.self){ r in
-                                            Text(r)
-                                                .tag(r)
+                                        if money || bank{
+                                            ForEach(data.red.reversed(), id:\.self){ r in
+                                                if r != "หนี้สิน"{
+                                                    Text(r)
+                                                        .tag(r)
+                                                }
+                                            }
+                                        }
+                                        else{
+                                            ForEach(data.red.reversed(), id:\.self){ r in
+                                                Text(r)
+                                                    .tag(r)
+                                            }
                                         }
                                     }
                                 })
@@ -327,11 +347,11 @@ struct AddActivityView: View {
                 .background(Color(#colorLiteral(red: 0, green: 0.7658643126, blue: 0.5054687858, alpha: 1)))
                 .cornerRadius(20)
             }
-            .offset(y:UIScreen.main.bounds.height/2*0.8)
-            .disabled((can_add_bool(cash: amount_string) || catagory == "" || !(catagory == "รายรับค้างรับ" || catagory == "หนี้สิน")) && !(money || bank))
+            .disabled(can_add_bool(cash: amount_string) || catagory == "" || (!(money || bank) && !(catagory == "รายรับค้างรับ" || catagory == "หนี้สิน")) )
             .alert(isPresented: $is_nagetive, content: {
                 Alert(title:Text("จำนวนเงินเกินกว่าในบัญชี"))
             })
+            .offset(y:UIScreen.main.bounds.height/2*0.8)
             // End button
             
         }

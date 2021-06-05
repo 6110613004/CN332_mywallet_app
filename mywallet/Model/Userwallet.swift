@@ -182,4 +182,97 @@ class Userwallet: ObservableObject {
         }
         return amount
     }
+    
+    func all_list_income() -> (list_in:Int,income:Double) {
+        var count : Int = 0
+        var income : Double = 0
+        for activity in lists{
+            count += (activity.type == "green" && (activity.status == true || activity.status == nil)) ? 1 : 0
+            income += (activity.type == "green" && (activity.status == true || activity.status == nil)) ? activity.get_amount() : 0
+        }
+        return (count,income)
+    }
+    
+    func all_list_expense() -> (list_ex:Int,expense:Double) {
+        var count : Int = 0
+        var expense : Double = 0
+        for activity in lists{
+            count += (activity.type == "red" && (activity.status == true || activity.status == nil)) ? 1 : 0
+            expense += (activity.type == "red" && (activity.status == true || activity.status == nil)) ? activity.amount : 0
+        }
+        return (count,expense)
+    }
+    
+    func amo_in_ex() -> (income:[Double],expense:[Double]){
+        var income : [Double] = []
+        var expense : [Double] = []
+        var sort_date = lists
+        if lists.count != 0{
+            for i in 1..<lists.count{
+                let activity = sort_date[i]
+                var j : Int = i - 1
+                while j >= 0 && sort_date[j].get_Dates() > activity.get_Dates() {
+                    sort_date[j + 1] = sort_date[j]
+                    j = j - 1
+                }
+                sort_date[j + 1] = activity
+            }
+        }
+        for activity in sort_date{
+            if activity.get_type() == "green" && (activity.status == true || activity.status == nil){
+                income.append(activity.get_amount())
+            }
+            if activity.get_type() == "red" && (activity.status == true || activity.status == nil){
+                expense.append(activity.get_amount())
+            }
+        }
+        return (income,expense)
+    }
+    func amo_date_income() -> (all_in_am:[Double],all_in_am_st:[(String,Double)]){
+        var all_in_am : [Double] = []
+        var all_in_am_st : [(String,Double)] = []
+        var sort_date = lists
+        if lists.count != 0{
+            for i in 1..<lists.count{
+                let activity = sort_date[i]
+                var j : Int = i - 1
+                while j >= 0 && sort_date[j].get_Dates() > activity.get_Dates() {
+                    sort_date[j + 1] = sort_date[j]
+                    j = j - 1
+                }
+                sort_date[j + 1] = activity
+            }
+        }
+        for activity in sort_date{
+            if (activity.type == "green" && (activity.status == true || activity.status == nil)){
+                all_in_am.append(activity.get_amount())
+                all_in_am_st.append((activity.get_fullDate(),activity.get_amount()))
+            }
+        }
+        return (all_in_am,all_in_am_st)
+    }
+    func amo_date_expense() -> (all_ex_am:[Double],all_ex_am_st:[(String,Double)]){
+        var all_ex_am : [Double] = []
+        var all_ex_am_st : [(String,Double)] = []
+        var sort_date = lists
+        if lists.count != 0{
+            for i in 1..<lists.count{
+                let activity = sort_date[i]
+                var j : Int = i - 1
+                while j >= 0 && sort_date[j].get_Dates() > activity.get_Dates() {
+                    sort_date[j + 1] = sort_date[j]
+                    j = j - 1
+                }
+                sort_date[j + 1] = activity
+            }
+        }
+        for activity in sort_date{
+            if (activity.type == "red" && (activity.status == true || activity.status == nil)){
+                all_ex_am.append(activity.get_amount())
+                all_ex_am_st.append((activity.get_fullDate(),activity.get_amount()))
+            }
+        }
+        return (all_ex_am,all_ex_am_st)
+    }
+    
 }

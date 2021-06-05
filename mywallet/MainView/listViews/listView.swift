@@ -32,21 +32,7 @@ struct listView: View {
                     .frame(width:UIScreen.main.bounds.width,height:50)
                     Picker(
                         selection:$show_type,
-                        label:
-                            HStack{
-                                Text("รายการที่แสดง :")
-                                    .padding()
-                                Text(show_type)
-                                Spacer()
-                                Image(systemName: "arrowtriangle.down.fill")
-                                    .padding(.trailing,5)
-                            }
-                            .font(.title3)
-                            .foregroundColor(.white)
-                            .frame(width:UIScreen.main.bounds.width*0.80,height:40)
-                            .background(Color(#colorLiteral(red: 1, green: 0.5794001222, blue: 0.1302672327, alpha: 1)))
-                            .cornerRadius(10)
-                            .shadow(radius: 2)
+                        label: Text("test")
                         ,
                         content:{
                             Text("รวม")

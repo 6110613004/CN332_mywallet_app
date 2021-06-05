@@ -13,8 +13,10 @@ struct NewTabView: View {
     @State var show_add_list = false
     let icons = [
         "person.crop.rectangle.fill",
+        "list.bullet.rectangle",
         "plus",
-        "list.bullet.rectangle"
+        "chart.pie.fill",
+        "magnifyingglass"
     ]
     var body: some View {
         VStack(spacing:0){
@@ -29,9 +31,13 @@ struct NewTabView: View {
                 case 0:
                     overallview().environmentObject(Userwallet)
                 case 1:
-                    EmptyView()
-                default:
                     listView().environmentObject(Userwallet)
+                case 2:
+                    EmptyView()
+                case 3:
+                    summaryView().environmentObject(Userwallet)
+                default:
+                    SearchView().environmentObject(Userwallet)
                 }
                 
             }
@@ -40,10 +46,10 @@ struct NewTabView: View {
                 .padding(10)
             if Userwallet.ena_tabView{
                 HStack{
-                    ForEach(0..<3, id: \.self) { number in
+                    ForEach(0..<5, id: \.self) { number in
                         Spacer()
                         Button(action:{
-                            if number == 1{
+                            if number == 2{
                                 show_add_list.toggle()
                             }
                             else{
@@ -52,7 +58,7 @@ struct NewTabView: View {
                                 }
                             }
                         }){
-                            if number == 1 {
+                            if number == 2 {
                                 Image(systemName: icons[number])
                                     .font(.system(size:40,weight: .regular,design: .default))
                                     .foregroundColor(Color(#colorLiteral(red: 0, green: 0.6563315392, blue: 0.1605705023, alpha: 1)))
